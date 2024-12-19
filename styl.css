@@ -1,0 +1,215 @@
+@font-face {
+    font-family: Poppins;
+    src: url(fonty/Poppins-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(fonty/Poppins-ExtraBold.ttf);
+    font-weight: bold;
+}
+
+    body {
+    font: 14px "Poppins";
+    color: #2c1901;
+    background: #f5f2d3;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 100px 0px 0px 0px;
+    min-width: 960px;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 100px;
+}
+body > header {
+    height: 120px;
+    width: 100%;
+    background: #f0b907;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+#logo {
+    height: 50px;
+    margin: auto 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('obrazky/vcelka.png') no-repeat;
+    background-size: 50px 50px;
+}
+#logo > * {
+    margin: 0 0 0 50px;
+}
+#logo h1 {
+    font-weight: bold;
+    line-height: 1.2em;
+    color: #2c1901;
+}
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+nav ul li {
+    padding: 0 25px;
+    margin: 0 5px;
+    font-size: 1em;
+    line-height: 4.3em;
+}
+nav ul a {
+color: white;
+padding: 8px 0;
+text-decoration: none;
+text-transform: uppercase;
+}
+nav ul a:hover, .aktivni a {
+    border-bottom: 2px solid #C15281 ;
+}
+
+article header {
+    height: 80px;
+}
+span {
+    font-style:italic;
+    font-size: 1.5em;
+}
+article {
+    max-width: 960px;
+    margin: 0 auto;
+}
+article h1 {
+    margin: 10;
+    font-size: 2.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 4px solid #C15281;
+    width: max-content;
+}
+
+article h2 {
+    font-size: 2em;
+}
+
+article section p {
+    margin-top: 100px;
+    margin-bottom: -50px;
+    line-height: 1.8em;
+}
+
+article section a {
+    color: #C15281;
+}
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    padding: 50px 0;
+    color: #2c1901;
+}
+.nastroje{
+    float: bottom;
+    width: 300px;
+    padding-top: 50px;
+    max-width: 100%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.vcelar {
+    float: right;
+    width: 450px;
+    height: 420px;
+    padding-left: 10px;
+}
+
+.cistic {
+    clear: both;
+}
+
+section ul {
+    padding-top: 40px;
+    list-style: none;
+}
+
+section ul li {
+    margin-top: 40px;
+    padding-left: 25px;
+    position: relative;
+}
+
+section ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url('obrazky/bee.ico');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.kontakt-text {
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+.kontakt-tlacitko {
+    background: #C15281  ;
+    padding: 10px 20px;
+    border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+
+}
+.kontakt-tlacitko:hover {
+    filter: brightness(115%) contrast(85%);
+    border: 0;
+}
+
+html {
+    background: #414042;
+    height: 100%;
+    margin: 0;
+}
+
+footer {
+    box-sizing: border-box;
+    text-align: center;
+    height: 100px;
+    color: white;
+    background: #414042;
+    padding: 50px 0 0 0;
+    clip-path: polygon(0 30px, 100% 0, 100% 105%, 0 105%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;   
+}
+
+.vlevo {
+    float: left;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    white-space: nowrap;
+}
+.vlevo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    padding-top: 40px;
+}
+.centrovany {
+    text-align: center;
+}
